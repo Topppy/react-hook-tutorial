@@ -1,28 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import StateHook from './views/StateHook';
+import EffectHook from './views/EffectHook';
+import Rules from './views/Rules';
+import Home from './views/Home';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const AppRouter = () => (
+  <Router>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/state-hook/">State Hook</Link>
+          </li>
+          <li>
+            <Link to="/effect-hook/">Effect Hook</Link>
+          </li>
+          <li>
+            <Link to="/rules/">Hooks规则</Link>
+          </li>
+        </ul>
+      </nav>
 
-export default App;
+      <Route path="/" exact component={Home} />
+      <Route path="/state-hook/" component={StateHook} />
+      <Route path="/effect-hook/" component={EffectHook} />
+      <Route path="/rules" exact component={Rules} />
+    </div>
+  </Router>
+);
+
+export default AppRouter;
