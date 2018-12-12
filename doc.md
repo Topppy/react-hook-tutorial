@@ -1,4 +1,5 @@
-# react + hooks + serviceWorker
+# react + hooks 这个demo项目的创建历程
+
 ## 开始
 ### 创建项目
 
@@ -11,7 +12,7 @@
 
 `cd react2018`
 
-### 升级react
+### 升级react到可以使用hook的版本
 
 ```
 yarn add react@16.7.0-alpha.2
@@ -35,6 +36,7 @@ yarn start
 #### class会完全被替代吗？
 也许，但是react并不打算删除掉class。
 
+## 我决定每一个篇都写成一个路由，这样既可以看到文字，有可以看到实例代码的执行。
 ### router
 react-router
 ```
@@ -61,8 +63,5 @@ yarn add eslint-plugin-react-hooks@next --dev
     }
   },
 ```
-
-
-
 
 
