@@ -8,7 +8,7 @@ import Home from './views/Home';
 import CustomHooks from './views/CustomHooks';
 
 const AppRouter = () => (
-  <Router>
+  <Router basename="/react-hook-tutorial" >
     <div>
       <nav>
         <ul>

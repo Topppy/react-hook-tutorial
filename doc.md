@@ -64,4 +64,39 @@ yarn add eslint-plugin-react-hooks@next --dev
   },
 ```
 
+### 部署
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://topppy.github.io/react-hook-tutoria",
+
+The build folder is ready to be deployed.
+
+[参考](https://medium.com/@_mariacheline/deploy-create-react-app-project-to-github-pages-2eb6deda5b89)
+
+在package.json中增加脚本
+
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build" 
+```
+安装ph-pages
+```
+yarn add gh-pages --dev
+```
+执行命令
+```
+yarn deploy
+```
+部署后，发现项目的gh-pages没有子路径前缀，
+
+配置Router组件
+```
+<Router basename="/react-hook-tutorial" >
+```
+
+
+
 
