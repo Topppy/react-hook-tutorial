@@ -5,6 +5,7 @@ import StateHook from './views/StateHook';
 import EffectHook from './views/EffectHook';
 import Rules from './views/Rules';
 import Home from './views/Home';
+import CustomHooks from './views/CustomHooks';
 
 const AppRouter = () => (
   <Router>
@@ -23,6 +24,9 @@ const AppRouter = () => (
           <li>
             <Link to="/rules/">Hooks规则</Link>
           </li>
+          <li>
+            <Link to="/custom-hooks/">自定义Hooks</Link>
+          </li>
         </ul>
       </nav>
 
@@ -30,6 +34,7 @@ const AppRouter = () => (
       <Route path="/state-hook/" component={StateHook} />
       <Route path="/effect-hook/" component={EffectHook} />
       <Route path="/rules" exact component={Rules} />
+      <Route path="/custom-hooks" exact component={CustomHooks} />
     </div>
   </Router>
 );
