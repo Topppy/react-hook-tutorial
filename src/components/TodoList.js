@@ -4,12 +4,12 @@ import Todo from './Todo'
 const TodoList = ({ todos, deleteTodo }) => {
   return (
     <div>
-      {todos.map((todo, index) => (
+      {todos.map((todo) => (
         <Todo
-          key={index.toString()}
-          todo={todo}
+          key={todo.id}
+          todo={todo.text}
           deleteMe={ () => {
-            deleteTodo(index)
+            deleteTodo(todo.id)
           }}
         />
       ))}
