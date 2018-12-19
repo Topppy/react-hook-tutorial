@@ -97,6 +97,12 @@ yarn deploy
 <Router basename="/react-hook-tutorial" >
 ```
 
+### gh-pages 404 
+
+首先我最初使用的是BrowserRouter，因此需要给<BrowserRouter basename="/react-hook-tutorial" >增加项目同名的basename才会被访问到。
+
+之后首页可以访问到，点击跳转也ok，但是直接刷新页面，出了首页其他路由都会404，于是我将路由改为HashRouter，并去掉了basename。完美。
+
 
 
 

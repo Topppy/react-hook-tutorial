@@ -1,0 +1,14 @@
+.iconRight {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: contrast(4) invert(1);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAAAz0lEQVR4Ae3TsQ2DQBBE0c1IaAE7IYPEu61RACEl2EVQBB3gQkjIAbdgy8yhk/7f/DQvOCMiIiKiM/I+ju/O+4znCwj6+XqCfv71hDjSHgAAAE4OAAAiyuIzAwAAAACAvADXvwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDQAAACscQhvNXU+KwH+NnUxKAExmLrH3TfVfN/iZvr8KQO8LEV1ofkHPteFpakpffT91PG7j01pKWur6HyK5e/xi0/RtZX9HBERERF9AAoC/sourUCaAAAAAElFTkSuQmCC);
+}
+
+.todo {
+  width: 50vw;
+  margin-top: 10px;
+}

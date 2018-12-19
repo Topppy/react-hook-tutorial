@@ -1,15 +1,17 @@
-// import './App.css';
+import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 import StateHook from './views/StateHook';
 import EffectHook from './views/EffectHook';
 import Rules from './views/Rules';
 import Home from './views/Home';
 import CustomHooks from './views/CustomHooks';
+import Play from './views/Play';
+import TDList from './views/TDList';
 
 const AppRouter = () => (
-  <Router basename="/react-hook-tutorial" >
-    <div>
+  <Router >
+    <div className='App'>
       <nav>
         <ul>
           <li>
@@ -27,14 +29,23 @@ const AppRouter = () => (
           <li>
             <Link to="/custom-hooks/">自定义Hooks</Link>
           </li>
+          <li>
+            <Link to="/todo-list/">实现TODO List</Link>
+          </li>
+          {/* <li>
+            <Link to="/play/">玩一下Hooks</Link>
+          </li> */}
         </ul>
       </nav>
 
       <Route path="/" exact component={Home} />
       <Route path="/state-hook/" component={StateHook} />
       <Route path="/effect-hook/" component={EffectHook} />
-      <Route path="/rules" exact component={Rules} />
-      <Route path="/custom-hooks" exact component={CustomHooks} />
+      <Route path="/rules/" component={Rules} />
+      <Route path="/custom-hooks/" component={CustomHooks} />
+      <Route path="/todo-list/" component={TDList} />
+      <Route path="/play/" component={Play} />
+
     </div>
   </Router>
 );
