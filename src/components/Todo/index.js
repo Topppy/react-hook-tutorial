@@ -4,7 +4,7 @@ import SwitchLight from '../SwitchLight'
 
 const Todo = ({todo, deleteMe}) => {
   return (
-    <div className={`flex-box ${s.todo}`}>
+    <div className={s.todo}>
       <SwitchLight />
       {todo}
       <i

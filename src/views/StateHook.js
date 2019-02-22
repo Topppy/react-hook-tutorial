@@ -40,7 +40,7 @@ export default function Counter() {
       </SyntaxHighlighter>
       介绍：
       <ul>
-        <li>userState 返回两个值，一个是当前的state值，另一个是更新state的func</li>
+        <li>useState 返回两个值，一个是当前的state值，另一个是更新state的func</li>
         <li>这个更新state的func与this.setState类似，除了它并不merge旧的state</li>
         <li>useState只接受一个参数，就是初始state，注意到与this.state不同，这个state可以不是对象（也可以是对象）</li>
         <li>如果多次调用useState，每次render都会按照你写的seState顺序执行</li>

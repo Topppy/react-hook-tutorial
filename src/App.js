@@ -1,51 +1,72 @@
 import './App.css';
 import React from "react";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, NavLink } from "react-router-dom";
+import { Row, Col } from 'antd';
 import StateHook from './views/StateHook';
 import EffectHook from './views/EffectHook';
 import Rules from './views/Rules';
 import Home from './views/Home';
 import CustomHooks from './views/CustomHooks';
-import Play from './views/Play';
+// import Play from './views/Play';
 import TDList from './views/TDList';
+import UseReducer from './views/UseReducer';
+import StateTable from './views/StateTable';
+import StateHookTable from './views/StateHookTable';
+import ReducerHookTable from './views/ReducerHookTable';
 
 const AppRouter = () => (
   <Router >
     <div className='App'>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/state-hook/">State Hook</Link>
-          </li>
-          <li>
-            <Link to="/effect-hook/">Effect Hook</Link>
-          </li>
-          <li>
-            <Link to="/rules/">Hooks规则</Link>
-          </li>
-          <li>
-            <Link to="/custom-hooks/">自定义Hooks</Link>
-          </li>
-          <li>
-            <Link to="/todo-list/">实现TODO List</Link>
-          </li>
-          {/* <li>
-            <Link to="/play/">玩一下Hooks</Link>
-          </li> */}
-        </ul>
-      </nav>
-
-      <Route path="/" exact component={Home} />
-      <Route path="/state-hook/" component={StateHook} />
-      <Route path="/effect-hook/" component={EffectHook} />
-      <Route path="/rules/" component={Rules} />
-      <Route path="/custom-hooks/" component={CustomHooks} />
-      <Route path="/todo-list/" component={TDList} />
-      <Route path="/play/" component={Play} />
-
+      <Row>
+        <Col span={18}>
+          <Route path="/" exact component={Home} />
+          <Route path="/state-hook/" component={StateHook} />
+          <Route path="/effect-hook/" component={EffectHook} />
+          <Route path="/rules/" component={Rules} />
+          <Route path="/custom-hooks/" component={CustomHooks} />
+          <Route path="/todo-list/" component={TDList} />
+          <Route path="/reducer-hook/" component={UseReducer} />
+          <Route path="/table/" component={StateTable} />
+          <Route path="/state-hook-table/" component={StateHookTable} />
+          <Route path="/reducer-hook-table/" component={ReducerHookTable} />
+        </Col>
+        <Col span={6}>
+          <nav>
+            <ul>
+              <li>
+                <NavLink activeClassName='active'  exact to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/state-hook/">State Hook</NavLink>
+              </li>
+              <li>
+                <NavLink to="/effect-hook/">Effect Hook</NavLink>
+              </li>
+              <li>
+                <NavLink to="/rules/">Hooks规则</NavLink>
+              </li>
+              <li>
+                <NavLink to="/custom-hooks/">自定义Hooks</NavLink>
+              </li>
+              <li>
+                <NavLink to="/todo-list/">实现TODO List</NavLink>
+              </li>
+              <li>
+                <NavLink to="/reducer-hook/">Reducer Hook</NavLink>
+              </li>
+              <li>
+                <NavLink to="/table/">state表格实例</NavLink>
+              </li>
+              <li>
+                <NavLink to="/state-hook-table/">State Hook表格实例</NavLink>
+              </li>
+              <li>
+                <NavLink to="/reducer-hook-table/">Reducer Hook表格实例</NavLink>
+              </li>
+            </ul>
+          </nav>
+        </Col>
+      </Row>
     </div>
   </Router>
 );

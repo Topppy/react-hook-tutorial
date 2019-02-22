@@ -1,22 +1,11 @@
+@import '~antd/dist/antd.css';
+
 .App {
   display: flex;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
-  background-color: #282c34;
-  color: white;
   flex-direction: column;
 }
-
-a {
-  color: #61dafb;
-}
-
-.flex-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.text-center {
-  text-align: center;
+.active {
+  color: blue;
 }
