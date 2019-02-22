@@ -33,7 +33,7 @@ export default function Rules() {
       </ul>
       官方提供<a href='https://www.npmjs.com/package/eslint-plugin-react-hooks'>linter</a>来校验这些规则
 
-      <h3>为什么不Hooks要保证顺序不变？</h3>
+      <h3>为什么Hooks要保证顺序不变？</h3>
       <p>当一个fucntion组件中有多个Hooks时，React是如何知道每个useState对应的是哪个state？</p>
       <p>React官方给的答案是：React依赖于Hooks被调用的顺序。当然我看完并没有明白为啥，于是在源码useState函数里打了断点</p>
       <p>最后定位到react-dom源码的useReducer函数，在该函数中，workInProgressHook是以单链表的方式存放Hooks，React只能按照顺序使用next来逐一执行每个Hook，无法跳过</p>

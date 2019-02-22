@@ -13,6 +13,7 @@ import UseReducer from './views/UseReducer';
 import StateTable from './views/StateTable';
 import StateHookTable from './views/StateHookTable';
 import ReducerHookTable from './views/ReducerHookTable';
+import TableHookTable from './views/TableHookTable';
 
 const AppRouter = () => (
   <Router >
@@ -29,6 +30,7 @@ const AppRouter = () => (
           <Route path="/table/" component={StateTable} />
           <Route path="/state-hook-table/" component={StateHookTable} />
           <Route path="/reducer-hook-table/" component={ReducerHookTable} />
+          <Route path="/table-hook-table/" component={TableHookTable} />
         </Col>
         <Col span={6}>
           <nav>
@@ -62,6 +64,9 @@ const AppRouter = () => (
               </li>
               <li>
                 <NavLink to="/reducer-hook-table/">Reducer Hook表格实例</NavLink>
+              </li>
+              <li>
+                <NavLink to="/table-hook-table/">自定义Table Hook表格实例</NavLink>
               </li>
             </ul>
           </nav>

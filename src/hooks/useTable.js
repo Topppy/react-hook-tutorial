@@ -1,20 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Table } from 'antd';
+import { useState, useEffect } from 'react'
 import api from '../service/api';
 
-const columns = [
-  {
-    title: '排名',
-    dataIndex: 'rank',
-    width: '50%',
-  },
-  {
-    title: '分数',
-    dataIndex: 'score',
-  },
-];
-
-export default function StateHookTable(props) {
+export default (fetchApi) => {
   // 数据列表
   const [data, setData] = useState([]);
   // 分页数据
@@ -34,7 +21,7 @@ export default function StateHookTable(props) {
       ...pagination,
       loading: true,
     });
-    const res = await api.getRank(offset, pageSize);
+    const res = await api[fetchApi](offset, pageSize);
     setData(res.results);
     setPagination({
       ...pagination,
@@ -55,18 +42,9 @@ export default function StateHookTable(props) {
     });
   };
 
-  return (
-    <React.Fragment>
-      <h3>使用state hooks实现的表格</h3>
-      <Table
-        columns={columns}
-        rowKey={record => record.id}
-        dataSource={data}
-        pagination={pagination}
-        loading={pagination.loading}
-        onChange={handleTableChange}
-      />
-    </React.Fragment>
-  );
+  return {
+    data,
+    pagination,
+    handleTableChange
+  }
 }
-
