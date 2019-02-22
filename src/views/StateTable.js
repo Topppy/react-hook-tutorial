@@ -70,7 +70,7 @@ export default class StateTable extends Component {
     const { data, pagination, loading } = this.state;
     return (
       <React.Fragment>
-        <h3>使用reducer hooks实现的表格</h3>
+        <h3>使用class组件实现的表格</h3>
         <Table
           columns={columns}
           rowKey={record => record.id}

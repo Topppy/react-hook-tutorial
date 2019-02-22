@@ -23,7 +23,7 @@ export default function StateHookTable(props) {
 
   return (
     <React.Fragment>
-      <h3>使用state hooks实现的表格</h3>
+      <h3>使用自定义table hooks实现的表格</h3>
       <Table
         columns={columns}
         rowKey={record => record.id}
