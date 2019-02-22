@@ -1,13 +1,15 @@
 {
-  "main.css": "/react-hook-tutorial/static/css/main.3300e324.chunk.css",
-  "main.js": "/react-hook-tutorial/static/js/main.70bac46a.chunk.js",
-  "main.js.map": "/react-hook-tutorial/static/js/main.70bac46a.chunk.js.map",
-  "static/js/1.01da1313.chunk.js": "/react-hook-tutorial/static/js/1.01da1313.chunk.js",
-  "static/js/1.01da1313.chunk.js.map": "/react-hook-tutorial/static/js/1.01da1313.chunk.js.map",
-  "runtime~main.js": "/react-hook-tutorial/static/js/runtime~main.c0420f7b.js",
-  "runtime~main.js.map": "/react-hook-tutorial/static/js/runtime~main.c0420f7b.js.map",
-  "static/css/main.3300e324.chunk.css.map": "/react-hook-tutorial/static/css/main.3300e324.chunk.css.map",
+  "main.css": "/react-hook-tutorial/static/css/main.58feb540.chunk.css",
+  "main.js": "/react-hook-tutorial/static/js/main.6f510e93.chunk.js",
+  "main.js.map": "/react-hook-tutorial/static/js/main.6f510e93.chunk.js.map",
+  "runtime~main.js": "/react-hook-tutorial/static/js/runtime~main.335f3c90.js",
+  "runtime~main.js.map": "/react-hook-tutorial/static/js/runtime~main.335f3c90.js.map",
+  "static/css/2.f13b113f.chunk.css": "/react-hook-tutorial/static/css/2.f13b113f.chunk.css",
+  "static/js/2.04bd0c1d.chunk.js": "/react-hook-tutorial/static/js/2.04bd0c1d.chunk.js",
+  "static/js/2.04bd0c1d.chunk.js.map": "/react-hook-tutorial/static/js/2.04bd0c1d.chunk.js.map",
   "index.html": "/react-hook-tutorial/index.html",
-  "precache-manifest.b188781cd553496b532e1d1f40c37c7b.js": "/react-hook-tutorial/precache-manifest.b188781cd553496b532e1d1f40c37c7b.js",
-  "service-worker.js": "/react-hook-tutorial/service-worker.js"
+  "precache-manifest.1fa71e60d6da996a1d7c02bdc3c33512.js": "/react-hook-tutorial/precache-manifest.1fa71e60d6da996a1d7c02bdc3c33512.js",
+  "service-worker.js": "/react-hook-tutorial/service-worker.js",
+  "static/css/2.f13b113f.chunk.css.map": "/react-hook-tutorial/static/css/2.f13b113f.chunk.css.map",
+  "static/css/main.58feb540.chunk.css.map": "/react-hook-tutorial/static/css/main.58feb540.chunk.css.map"
 }
